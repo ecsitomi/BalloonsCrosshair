@@ -38,7 +38,7 @@ GAME_TIME=15000
 WHITE=(255,255,255)
 
 pygame.init()
-pygame.mixer.init()
+pygame.mixer.init(frequency=44100, size=-16, channels=2, buffer=4096)
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Balloons in crosshair")
 clock = pygame.time.Clock()
